@@ -13,6 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/alperg/boggle-solver.git"
   },
+  "homepage": "https://alperg.com/boggle-solver",
   "eslintConfig": {
     "extends": "react-app"
   },
