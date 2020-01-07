@@ -1,7 +1,7 @@
-// Api Service
+// API Service
 
-// Fetched words from the Rapid API endpoint based on passed letters
-// Pass letters as string and the length should be 16
+// Fetches words from the Rapid API endpoint based on letters passed
+// Parameter letters should be a string with length of 16 characters
 export async function fetchWords(letters) {
   const url = `https://codebox-boggle-v1.p.rapidapi.com/${letters}`;
   
