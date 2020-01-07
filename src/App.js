@@ -35,7 +35,7 @@ class App extends Component {
     this.setState({ board });
   };
 
-  // Fetch the words from the APIs and update the UI with the results
+  // Fetch the words from the API and update the UI with the results
   // TODO: Further improvement: Some of this logic can be moved to a utility service
   onSolveClick = () => {
     const letters = this.state.board.flat().join('');
@@ -65,7 +65,7 @@ class App extends Component {
     }).catch(console.log);
   }
 
-  // Calculates score based on the work length
+  // Calculates score based on the word length
   // TODO: Further improvement: This can be moved to a utility service
   calculateScore = (word) => {
     let score = 1;
@@ -120,7 +120,7 @@ class App extends Component {
             </Col>
             <Col md="4" xs="12">
               <div className="score-wrapper">
-                <Card body inverse  color="secondary">
+                <Card body inverse color="secondary">
                   <CardBody>
                     <h1 className="display-5 words">Words found: {result.length > 0 ? result.length : ''}</h1>
                     <h1 className="display-5 score">Total Score: {totalScore > 0 ? totalScore : ''}</h1>
