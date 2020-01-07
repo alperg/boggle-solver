@@ -84,7 +84,7 @@ class Board extends Component {
     });
   }
 
-  // Check if the typed char is a valid char
+  // Check if the length of the letters is 16
   isValid = (board) => {
     return board.flat().join('').trim().length === 16;
   }
